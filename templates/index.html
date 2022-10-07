@@ -1,0 +1,100 @@
+{% extends 'base.html' %} {% block title %}Data Model{% endblock %} {% block
+content %}
+<!-- Main Body -->
+<section>
+  <div class="site-info flex-row">
+    <div class="info flex-row">
+      <a href="#"
+        ><img
+          src="{{ url_for('static', filename='img/Logo.jpg') }}"
+          alt="university of sheffield logo"
+      /></a>
+      <h1>Data Visualisation Software</h1>
+      <p>Verison 0.0.1</p>
+    </div>
+    <div class="info-btn flex-row">
+      <button class="btn info-btn">
+        Create Process
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 15 15"
+          width="12"
+          height="12"
+          style="margin-left: 0.33em"
+        >
+          <g
+            stroke="currentColor"
+            stroke-width="1.75"
+            fill="none"
+            fill-rule="evenodd"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M4.497 1H3a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-1.5h0"
+              opacity=".6"
+            ></path>
+            <path d="M9 1.008L14 1v5M14 1L6 9"></path>
+          </g>
+        </svg>
+      </button>
+      <i class="fas fa-question-circle fa-2x"></i>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="features grid">
+    <div class="functionality flex-row">
+      <i class="fa fa-file-code fa-2x"></i>
+      <h4>Create Analytics</h4>
+      <i class="fa fa-angle-double-down fa-2x"></i>
+    </div>
+    <div class="feedback flex-row">
+      <a href="" class="flex-row">
+        <i class="fa fa-comment-alt fa-2x"></i>
+        <p>Send Feedback</p>
+      </a>
+      <i class="fa fa-cog fa-2x"></i>
+    </div>
+    <a href="/home" class="visualisation flex-row">
+      <i class="fa fa-chart-line fa-2x"></i>
+      <p>Process Analytics</p>
+    </a>
+  </div>
+</section>
+
+<section>
+  <div class="data grid">
+    <div class="thing-list function-list flex-column">
+      <ul>
+        <li>Mean</li>
+        <li>Standard Deviation</li>
+      </ul>
+    </div>
+    <div class="data-model-canvas flex-row">
+      <div class="flex-column">
+        <a href="#">
+          <div class="create-thing-btn flex-row">
+            <div class="flex-row">
+              <h4>Create Thing</h4>
+              <i class="fa fa-microchip"></i>
+            </div>
+          </div>
+        </a>
+        <a href="#"
+          ><div class="delete-thing-btn">
+            <i class="fa fa-trash fa-2x"></i>
+          </div>
+        </a>
+      </div>
+      <div class="data-model data-model-grid"></div>
+    </div>
+    <div class="thing-list flex-column">
+      <ul>
+        <li>Thing 1</li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}
