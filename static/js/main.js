@@ -1,6 +1,6 @@
 const TOPIC = "data";
-const AWSAccessKeyId = "AKIATYSME3DNQEJPAF2I";
-const AWSSecretKey = "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";
+const AWSAccessKeyId = "";
+const AWSSecretKey = "";
 
 // the ordert things should be executed https://stackoverflow.com/questions/36080053/amqjs0011e-invalid-state-not-connected
 // great documentation https://www.hivemq.com/blog/mqtt-client-library-encyclopedia-paho-js/
